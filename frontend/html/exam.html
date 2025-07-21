@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Examination</title>
+  <link rel="stylesheet" href="../css/exam.css" />
+</head>
+<body>
+
+  <div class="exam-container">
+
+    <!-- Sidebar: Student Profile -->
+    <div class="exam-sidebar">
+      <h3>Student Profile</h3>
+
+      <div class="photo-frame">
+        <img id="examPhoto" src="../assets/photos/default.jpg" alt="Student Photo">
+      </div>
+
+      <p><strong>Name:</strong> <span id="examName">-</span></p>
+      <p><strong>Roll No:</strong> <span id="examRoll">-</span></p>
+      <p><strong>Father:</strong> <span id="examFather">-</span></p>
+      <p><strong>Mother:</strong> <span id="examMother">-</span></p>
+      <p><strong>DOB:</strong> <span id="examDOB">-</span></p>
+      <p><strong>Subject:</strong> <span id="examSubject">-</span></p>
+      <p><strong>Year:</strong> <span id="examYear">-</span></p>
+
+      <div class="exam-timer">
+        <strong>Time Left:</strong>
+        <span id="timer">30:00</span>
+      </div>
+
+      <div class="exam-leave">
+        <button onclick="leaveExam()">Leave Exam</button>
+      </div>
+    </div>
+
+    <!-- Main Exam Area -->
+    <div class="exam-main">
+      <h2>Online Examination</h2>
+
+      <div id="questionBox" class="question-box">
+        <!-- JS will inject questions here -->
+      </div>
+
+      <div class="exam-fixed-buttons">
+        <button onclick="skipQuestion()">Skip</button>
+        <button onclick="submitExam()">Submit</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Leave Exam Function -->
+  <script>
+    function leaveExam() {
+      if (confirm("Are you sure you want to leave the exam? Your progress will be lost.")) {
+        window.location.href = "student.html";
+      }
+    }
+  </script>
+
+  <!-- Exam Logic -->
+  <script src="../js/exam.js"></script>
+</body>
+</html>

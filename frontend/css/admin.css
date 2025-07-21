@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(177, 238, 207, 0.6);
+  /* background-image: url('../assets/IIMT_LOGIN.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.admin-dashboard {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(150, 199, 240, 0.88);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+                                                                                                                                                                                                                                  
+}
+
+header h1 {
+  margin-bottom: 5px;
+  color: #0014cc;
+}
+header h2 {
+  margin-bottom: 5px;
+  color: #0014cc;
+}
+
+
+/* Cards */
+.card {
+  background-color: rgba(250, 250, 250, 0.95);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(0, 123, 255, 0.2);
+}
+
+/* Forms and buttons */
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input[type="date"] {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.85);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+/* Scrollable result/student/question lists */
+.scroll-box {
+  background-color: rgba(245, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+}
+
+.student-row,
+.question-row {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.08);
+}
+
+.student-row button,
+.question-row button {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

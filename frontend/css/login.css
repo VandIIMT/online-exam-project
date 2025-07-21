@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+   /* background-color: rgba(145, 235, 168, 0.5); */
+   background-image: url('../assets/IIMT_LOGIN.jpg');
+  background-size: cover;     /* 🔥 Makes the image cover the full screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: keeps image in place while scrolling */
+  font-family: sans-serif;
+}
+
+
+.login-container {
+  width: 350px;
+  max-width: 90%;
+  margin: 80px auto;
+  background-color: rgba(173, 216, 230, 0.5);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(0, 123, 255, 0.85);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+@media screen and (max-width: 500px) {
+  .login-container {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  input, button {
+    font-size: 15px;
+  }
+}

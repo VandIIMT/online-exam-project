@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <div style="text-align: center; margin-bottom: 20px;">
+  <button onclick="toggleAllSections()" id="collapseBtn">Collapse All Sections</button>
+    </div> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+
+  <div class="admin-dashboard">
+
+    <!-- 📌 Header -->
+    <header>
+      <h1>Admin Panel</h1>
+      <p><H2>IIMT University Meerut</H2></p>
+    </header>
+
+    <!-- 🧑‍🎓 Student Management Card -->
+    <section class="card">
+      <h3>Student Management</h3>
+
+      <div class="form-group">
+        <input type="file" id="studentFile" accept=".txt,.csv">
+        <button onclick="uploadStudents()">Upload Student File</button>
+      </div>
+
+      <div class="form-group">
+        <input type="number" id="roll" placeholder="Roll Number">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="father" placeholder="Father's Name">
+        <input type="text" id="mother" placeholder="Mother's Name">
+        <input type="date" id="dob" placeholder="Date of Birth">
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="text" id="year" placeholder="Year">
+
+        <button onclick="addStudent()">Add / Update Student</button>
+      </div>
+
+        <button onclick="toggleStudents()">View Student Bank</button>
+        <div id="studentTable" class="scroll-box" style="display: none;"></div>
+
+      <div id="studentTable" class="scroll-box"></div>
+    </section>
+
+    <!-- 📝 Question Bank Card -->
+    <section class="card">
+      <h3>Question Bank</h3>
+
+      <div class="form-group">
+        <input type="file" id="questionFile" accept=".txt,.xlsx">
+        <button onclick="uploadQuestions()">Upload Questions</button>
+      </div>
+
+      <button onclick="toggleQuestions()">View Question Bank</button>
+        <div id="questionTable" class="scroll-box" style="display: none;"></div>
+
+      <div id="questionTable" class="scroll-box"></div>
+    </section>
+
+    <!-- 📊 Result Management Card -->
+    <section class="card">
+      <h3>Student Results</h3>
+
+      <div class="form-group">
+        <input type="text" id="searchInput" placeholder="Search by Roll No or Name">
+      </div>
+
+      <div id="resultsContainer" class="scroll-box"></div>
+
+      <div style="margin-top: 15px;">
+        <button onclick="downloadAllResults()">Download All Results (.zip)</button>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

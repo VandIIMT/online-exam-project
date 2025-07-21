@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Online Exam</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Roll No or Admin Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="resetPasswordSection" style="display: none;">
+      <h3>Set New Password</h3>
+      <input type="password" id="newPassword" placeholder="New Password">
+      <button onclick="setNewPassword()">Save Password</button>
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>
