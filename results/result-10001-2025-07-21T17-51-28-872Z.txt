@@ -1,0 +1,129 @@
+Roll No: 10001
+Name: Ankit Kumar
+Subject: Computer Science
+Attempted: 30
+Total: 30
+Correct: 15
+Time: 7/21/2025, 11:21:28 PM
+
+Questions and Answers:
+Q1: Which keyword is used to declare a constant in JavaScript?
+Your Answer: const
+Correct Answer: const
+
+Q2: RAM stands for?
+Your Answer: Random Access Memory
+Correct Answer: Random Access Memory
+
+Q3: Which one is a database system?
+Your Answer: Python
+Correct Answer: MySQL
+
+Q4: Which planet is known as the Red Planet?
+Your Answer: Mars
+Correct Answer: Mars
+
+Q5: Which HTML tag is used to insert a line break?
+Your Answer: <br>
+Correct Answer: <br>
+
+Q6: What is the capital of India?
+Your Answer: New Delhi
+Correct Answer: New Delhi
+
+Q7: Who invented the WWW?
+Your Answer: Mark Zuckerberg
+Correct Answer: Tim Berners-Lee
+
+Q8: What is the full form of ATM?
+Your Answer: Automated Teller Machine
+Correct Answer: Automated Teller Machine
+
+Q9: Which organ purifies blood?
+Your Answer: Lungs
+Correct Answer: Kidney
+
+Q10: How many bits are in 1 byte?
+Your Answer: 8
+Correct Answer: 8
+
+Q11: Which symbol is used to denote an ID in CSS?
+Your Answer: .
+Correct Answer: #
+
+Q12: Who wrote the national anthem of India?
+Your Answer: Nehru
+Correct Answer: Tagore
+
+Q13: The boiling point of water is?
+Your Answer: 100°C
+Correct Answer: 100°C
+
+Q14: Which year was the Indian Constitution adopted?
+Your Answer: 1950
+Correct Answer: 1950
+
+Q15: Which number system is used in computers?
+Your Answer: Octal
+Correct Answer: Binary
+
+Q16: Which one is a search engine?
+Your Answer: YouTube
+Correct Answer: Google
+
+Q17: What does CPU stand for?
+Your Answer: Control Processing Unit
+Correct Answer: Central Processing Unit
+
+Q18: Who is the father of computers?
+Your Answer: Charles Babbage
+Correct Answer: Charles Babbage
+
+Q19: Which of the following is a programming language?
+Your Answer: CSS
+Correct Answer: Python
+
+Q20: Binary of 5 is?
+Your Answer: 100
+Correct Answer: 101
+
+Q21: JavaScript is used for?
+Your Answer: Structuring HTML
+Correct Answer: Programming web pages
+
+Q22: Shortcut for copy in Windows?
+Your Answer: Ctrl + C
+Correct Answer: Ctrl + C
+
+Q23: India’s national animal?
+Your Answer: Tiger
+Correct Answer: Tiger
+
+Q24: What is the output of 3 + 2 * 2?
+Your Answer: 7
+Correct Answer: 7
+
+Q25: How many continents are there?
+Your Answer: 6
+Correct Answer: 7
+
+Q26: Which company developed the Windows OS?
+Your Answer: Microsoft
+Correct Answer: Microsoft
+
+Q27: Which one is NOT a web browser?
+Your Answer: Firefox
+Correct Answer: GitHub
+
+Q28: Which device is used to convert digital signals into analog?
+Your Answer: Modem
+Correct Answer: Modem
+
+Q29: What is the square root of 64?
+Your Answer: 7
+Correct Answer: 8
+
+Q30: Which device is used to print hard copies?
+Your Answer: Scanner
+Correct Answer: Printer
+

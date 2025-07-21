@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <div style="text-align: center; margin-bottom: 20px;">
-  <button onclick="toggleAllSections()" id="collapseBtn">Collapse All Sections</button>
-    </div> -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="../css/admin.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Online Exam</title>
+    <link rel="stylesheet" href="../css/admin.css" />
 </head>
 <body>
 
-  <div class="admin-dashboard">
+    <div class="gradient-bg"></div>
 
-    <!-- 📌 Header -->
-    <header>
-      <h1>Admin Panel</h1>
-      <p><H2>IIMT University Meerut</H2></p>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <!--<img src="/assets/logo.png" alt="IIMT Logo" class="logo" />-->
+        <h1>Online Examination System</h1>
+        <p>IIMT University, Meerut</p>
     </header>
 
-    <!-- 🧑‍🎓 Student Management Card -->
-    <section class="card">
-      <h3>Student Management</h3>
+    <!-- Main Admin Controls -->
+    <main class="card-grid">
 
-      <div class="form-group">
-        <input type="file" id="studentFile" accept=".txt,.csv">
-        <button onclick="uploadStudents()">Upload Student File</button>
-      </div>
+        <!-- Student Management -->
+        <section class="card">
+            <h2>🎓 Student Management</h2>
+            <input type="file" id="studentFile" accept=".txt,.csv">
+            <button onclick="uploadStudents()">Upload Student File</button>
 
-      <div class="form-group">
-        <input type="number" id="roll" placeholder="Roll Number">
-        <input type="text" id="name" placeholder="Student Name">
-        <input type="text" id="father" placeholder="Father's Name">
-        <input type="text" id="mother" placeholder="Mother's Name">
-        <input type="date" id="dob" placeholder="Date of Birth">
-        <input type="text" id="subject" placeholder="Subject">
-        <input type="text" id="year" placeholder="Year">
+            <input type="number" id="roll" placeholder="Roll Number">
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="text" id="father" placeholder="Father's Name">
+            <input type="text" id="mother" placeholder="Mother's Name">
+            <input type="date" id="dob">
+            <input type="text" id="subject" placeholder="Subject">
+            <input type="text" id="year" placeholder="Year">
 
-        <button onclick="addStudent()">Add / Update Student</button>
-      </div>
+            <button onclick="addStudent()">Add / Update Student</button>
+            <button onclick="toggleStudents()">View Student Bank</button>
+            <div id="studentTable" class="scroll-box" style="display: none;"></div>
+        </section>
 
-        <button onclick="toggleStudents()">View Student Bank</button>
-        <div id="studentTable" class="scroll-box" style="display: none;"></div>
+        <!-- Question Bank -->
+        <section class="card">
+            <h2>📝 Question Bank</h2>
+            <input type="file" id="questionFile" accept=".txt,.xlsx">
+            <button onclick="uploadQuestions()">Upload Questions</button>
+            <button onclick="toggleQuestions()">View Question Bank</button>
+            <div id="questionTable" class="scroll-box" style="display: none;"></div>
+        </section>
 
-      <div id="studentTable" class="scroll-box"></div>
-    </section>
+        <!-- Result Management -->
+        <section class="card">
+            <h2>📊 Student Results</h2>
+            <input type="text" id="searchInput" placeholder="Search by Roll No or Name">
+            <button onclick="downloadAllResults()">Download All Results (.zip)</button>
+            <div id="resultsContainer" class="scroll-box"></div>
+        </section>
 
-    <!-- 📝 Question Bank Card -->
-    <section class="card">
-      <h3>Question Bank</h3>
+    </main>
 
-      <div class="form-group">
-        <input type="file" id="questionFile" accept=".txt,.xlsx">
-        <button onclick="uploadQuestions()">Upload Questions</button>
-      </div>
+    <!-- Footer with College Project Info -->
+    <footer class="project-info">
+        <h2>🎓 College Project - Online Examination System</h2>
+        <p><strong>Institution:</strong> IIMT University, Meerut, Uttar Pradesh</p>
+        <p><strong>Department:</strong> Computer Science & Engineering</p>
+        <p><strong>Project Title:</strong> Online Examination System using Node.js</p>
+        <p><strong>Submitted By:</strong> Ankit Kumar Singh</p>
+        <p><strong>Session:</strong> 2024–2025</p>
+        <p>This project is designed to manage student exams, results, and backend control using HTML, CSS, JavaScript, and Node.js.</p>
+    </footer>
 
-      <button onclick="toggleQuestions()">View Question Bank</button>
-        <div id="questionTable" class="scroll-box" style="display: none;"></div>
-
-      <div id="questionTable" class="scroll-box"></div>
-    </section>
-
-    <!-- 📊 Result Management Card -->
-    <section class="card">
-      <h3>Student Results</h3>
-
-      <div class="form-group">
-        <input type="text" id="searchInput" placeholder="Search by Roll No or Name">
-      </div>
-
-      <div id="resultsContainer" class="scroll-box"></div>
-
-      <div style="margin-top: 15px;">
-        <button onclick="downloadAllResults()">Download All Results (.zip)</button>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script src="../js/admin.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="../js/admin.js"></script>
 </body>
 </html>

@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Student Profile</title>
-  <link rel="stylesheet" href="../css/student.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - IIMT University</title>
+    <link rel="stylesheet" href="../css/student.css" />
 </head>
 <body>
-  <div class="student-container">
+    <div class="student-container">
+        <!-- 30%: Student Profile -->
+        <div class="profile-section">
+            <img id="studentPhoto" src="../assets/photos/default.jpg" alt="Student Photo" />
+            <h2><span id="studentName">Student Name</span></h2>
+            <ul>
+                <li><strong>Roll No:</strong> <span id="studentRoll">-</span></li>
+                <li><strong>Father's Name:</strong> <span id="studentFather">-</span></li>
+                <li><strong>Mother's Name:</strong> <span id="studentMother">-</span></li>
+                <li><strong>DOB:</strong> <span id="studentDOB">-</span></li>
+                <li><strong>Subject:</strong> <span id="studentSubject">-</span></li>
+                <li><strong>Year:</strong> <span id="studentYear">-</span></li>
+            </ul>
+        </div>
 
-    <!-- Student Info Left Panel -->
-    <div class="student-info">
+        <!-- 70%: University Info + Exam Controls -->
+        <div class="info-section">
+            <h1>IIMT University Meerut</h1>
+            <p><em>A Private University Recognized by UGC</em></p>
+            <p><strong>Address:</strong> O Pocket, Ganga Nagar, Meerut, Uttar Pradesh 250001</p>
+            <p><strong>Chancellor:</strong> Yogesh Mohan Gupta</p>
+            <p><strong>Director:</strong> Mayank Agarwal</p>
 
-      <img id="studentPhoto" src="../assets/photos/default.jpg" alt="Student Photo">
-      <h3>Student Profile</h3>
-         <p><strong>Name:</strong> <span id="studentName">-</span></p>
-         <p><strong>Roll No:</strong> <span id="studentRoll">-</span></p>
-          <p><strong>Father:</strong> <span id="studentFather">-</span></p>
-         <p><strong>Mother:</strong> <span id="studentMother">-</span></p>
-          <p><strong>DOB:</strong> <span id="studentDOB">-</span></p>
-          <p><strong>Subject:</strong> <span id="studentSubject">-</span></p>
-          <p><strong>Year:</strong> <span id="studentYear">-</span></p>
-        
+            <div class="motto">
+                <h3>"Transforming Education System, Transforming Lives"</h3>
+            </div>
+
+            <div class="btn-group">
+                <button onclick="startExam()">Start Exam</button>
+                <button onclick="downloadMyResult()">Download My Result</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
     </div>
 
-    <!-- College & Exam Panel -->
-    <div class="exam-panel">
-      <h1><strong>IIMT University Meerut</strong></h1><br>
-      <p><strong> IIMT University is a private university </strong></p>
-      <p><strong>Address:-</strong>  O Pocket, Ganga Nagar, Meerut, Uttar Pradesh 250001</p>
-      <p><strong>Founded:-</strong>  2016</p>
-      <p><strong>Campus:-</strong>  Urban, 100 acres (40 ha)</p>
-      <p><strong>Director:-</strong>  Mayank Agarwal</p>
-      <p><strong>Chancellor:-</strong>  Yogesh Mohan Gupta</p><br>
-      <p><strong><h2>Motto :</h2></strong><h3> Transforming Education System, Transforming Lives</h3></p><br>
-      <button onclick="startExam()">Start Exam</button><br>
-      <button onclick="downloadMyResult()">Download My Result</button><br>
-      <button onclick="logout()">Logout</button>
-    </div>
-
-  </div>
-
-  <script src="../js/student.js"></script>
+    <script src="../js/student.js"></script>
 </body>
 </html>

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "roll": "10001",
+    "name": "Ankit Kumar",
+    "father": "Rajesh Kumar",
+    "mother": "Sunita Devi",
+    "dob": "2002-08-15",
+    "subject": "Computer Science",
+    "year": "2nd",
+    "password": "V2@1234"
+  }
+]

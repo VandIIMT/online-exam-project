@@ -1,63 +1,132 @@
+/* Full-screen animated background */
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-
-   /* background-color: rgba(145, 235, 168, 0.5); */
-   background-image: url('../assets/IIMT_LOGIN.jpg');
-  background-size: cover;     /* 🔥 Makes the image cover the full screen */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: keeps image in place while scrolling */
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    overflow: hidden;
 }
 
-
-.login-container {
-  width: 350px;
-  max-width: 90%;
-  margin: 80px auto;
-  background-color: rgba(173, 216, 230, 0.5);
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+.gradient-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #3e8e9d, #40a798);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    z-index: -1;
 }
 
+/* Login Container */
+.login-container,
+.reset-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+}
+
+    .login-container h2,
+    .reset-container h2 {
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+/* Form inputs */
 input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.3s ease;
 }
 
+    input:focus {
+        background: #fff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+    }
+
+/* Button */
 button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  background-color: rgba(0, 123, 255, 0.85);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 10px;
 }
 
-button:hover {
-  background-color: rgba(0, 123, 255, 1);
-}
+    button:hover {
+        transform: scale(1.05);
+    }
 
-@media screen and (max-width: 500px) {
-  .login-container {
+/* About Section */
+.about-section {
+    margin-top: 40px;
+    max-width: 700px;
     padding: 20px;
-    font-size: 14px;
-  }
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
 
-  input, button {
-    font-size: 15px;
-  }
+/* Animations */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .login-container,
+    .reset-container,
+    .about-section {
+        margin: 20px;
+    }
 }
