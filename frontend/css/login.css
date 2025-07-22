@@ -17,8 +17,8 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, #1e3c72, #2a5298, #3e8e9d, #40a798);
-    background-size: 400% 400%;
+    background: url('../assets/IIMT_LOGIN.JPG') center center / cover no-repeat, linear-gradient(-45deg, #1e3c72, #2a5298, #3e8e9d, #40a798);
+    background-size: cover, 400% 400%;
     animation: gradientFlow 15s ease infinite;
     z-index: -1;
 }
